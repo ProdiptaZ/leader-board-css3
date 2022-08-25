@@ -123,3 +123,45 @@ main{
 .course-author{
     color: #ED6B4F;
 }
+
+/*---------------
+    Responsive
+ ---------------- */
+
+ /* Mobile Devices */
+
+@media only screen and (max-width: 688px) {
+    .container{
+        width: 100%;
+    }
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(1, 1fr);
+    }   
+    .player, .blog{
+        flex-direction: column;
+    }
+    .course{
+        margin-top: 20px;
+    }
+}
+
+/* Tablet Devices */
+
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    .container{
+        width: 100%;
+    }
+    .players, .courses, .blogs{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blogs, .courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .course{
+        margin-top: 20px;
+    }
+
+    
+    
+}
